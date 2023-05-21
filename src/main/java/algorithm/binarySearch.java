@@ -65,4 +65,10 @@ public class binarySearch {
         }
     }
 
+    public static int binarySearchLeftMost(int[] a,int target){
+
+
+
+        return -1;
+    }
 }
