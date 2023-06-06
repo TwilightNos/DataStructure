@@ -65,10 +65,31 @@ public class binarySearch {
         }
     }
 
+    
     public static int binarySearchLeftMost(int[] a,int target){
 
-
-
+        int i = 0, j = a.length-1;
+        while(i<=j){
+            int m = (i+j)>>>1;
+            if(a[m] < target){
+                i=m+1;
+            }else if(a[m]>target){
+                j= m-1;
+            }else{
+                if(m>0 && a[m-1] == target){
+                    j = m-1;
+                }else{
+                    return m;
+                }
+            }
+        }
         return -1;
+
+
+//        System.arraycopy();
     }
+
+
+
+
 }
